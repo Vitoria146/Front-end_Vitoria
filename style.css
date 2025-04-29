@@ -1,0 +1,241 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  /* Remove margens padrão */
+  padding: 0;
+  /* Remove espaçamentos internos padrão */
+  box-sizing: border-box;
+  /* Inclui padding e border dentro da largura/altura dos elementos */
+}
+
+/* Estilo base do corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Fonte principal da página */
+  background-color: #f9d9ac;
+  /* Cor de fundo clara */
+  color: #333;
+  /* Cor padrão do texto (cinza escuro) */
+  padding: 0;
+  /* Remove padding interno do body */
+  line-height: 1.6;
+  /* Espaçamento vertical entre linhas */
+  display: flex;
+  /* Define o body como flex container (usado com min-height para empurrar o footer) */
+  flex-direction: column;
+  /* Os filhos do body ficarão empilhados verticalmente */
+  min-height: 100vh;
+  /* Altura mínima de 100% da altura da tela (viewport height) */
+}
+
+/* Estilo da tag <header> */
+header {
+  background-color: #f18886;
+  /* Cor de fundo escura (azul petróleo) */
+  color: white;
+  /* Cor do texto no header */
+  padding: 15px;
+  /* Espaçamento interno */
+  width: 100%;
+  /* Ocupa toda a largura da tela */
+  text-align: center;
+  /* Alinha texto ao centro */
+  display: flex;
+  /* Torna o header um flex container */
+  align-items: center;
+  /* Alinha verticalmente os filhos ao centro */
+  justify-content: center;
+  /* Centraliza horizontalmente os filhos */
+}
+
+.contact{
+
+  display: list-item;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.links_redes{
+  background-color: #fca483;
+    width: 180px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 18px;
+    color: #F6F6F6;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+/* Container do conteúdo dentro do cabeçalho */
+.header-content {
+  display: flex;
+  /* Layout em linha (lado a lado) */
+  align-items: center;
+  /* Alinha verticalmente os elementos */
+  gap: 15px;
+  /* Espaçamento entre os elementos */
+  padding: 15px;
+  /* Espaçamento interno */
+  width: 100%;
+  /* Ocupa toda a largura disponível */
+  max-width: 800px;
+  /* Limita a largura máxima */
+}
+
+/* Estilo do <figure> com a imagem do perfil */
+figure {
+  width: 100px;
+  /* Largura fixa */
+  height: 100px;
+  /* Altura fixa */
+  background-color: #ccc;
+  /* Cor de fundo cinza (caso a imagem não carregue) */
+  border-radius: 50%;
+  /* Deixa o formato redondo */
+  display: flex;
+  /* Centraliza o conteúdo com flexbox */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  font-size: 0.9rem;
+  /* Tamanho da fonte do texto interno (caso não haja imagem) */
+  color: #666;
+  /* Cor do texto interno (placeholder) */
+  flex-shrink: 0;
+  /* Impede o figure de encolher no layout */
+  overflow: hidden;
+  /* Esconde qualquer conteúdo que ultrapasse o círculo */
+}
+
+/* Estilo da imagem dentro do <figure> */
+figure img {
+  width: 100%;
+  /* A imagem ocupa toda a largura do container */
+  height: auto;
+  /* Altura proporcional à largura (mantém aspecto) */
+  border-radius: 50%;
+  /* Mantém a imagem em formato circular */
+  display: block;
+  /* Remove espaços indesejados abaixo da imagem */
+}
+
+/* Título principal (nome) */
+.profile-info h1 {
+  font-size: 1.8rem;
+  /* Tamanho grande para destaque */
+  margin-bottom: 5px;
+  /* Espaço entre o nome e o subtítulo */
+}
+
+/* Subtítulo (descrição) */
+.profile-info p {
+  font-size: 1.1rem;
+  /* Tamanho de fonte intermediário */
+  color: #ecf0f1;
+  /* Cor clara para contraste com fundo escuro */
+}
+
+/* Estilo da área principal do conteúdo */
+main {
+  max-width: 800px;
+  /* Largura máxima do conteúdo central */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  padding: 15px;
+  /* Espaçamento interno */
+}
+
+/* Cada seção (sobre, hobbies, contato) */
+section {
+  margin-bottom: 30px;
+  /* Espaço abaixo de cada seção */
+}
+
+/* Títulos das seções */
+h2 {
+  color: #2c3e50;
+  /* Cor semelhante ao cabeçalho */
+  margin-bottom: 10px;
+  /* Espaço abaixo do título */
+}
+
+/* Listas (interesses/hobbies) */
+ul {
+  list-style: none;
+  /* Remove os marcadores padrão (bolinhas) */
+  padding-left: 15px;
+  /* Indentação para alinhar visualmente */
+}
+
+/* Itens da lista */
+ul li {
+  margin-bottom: 8px;
+  /* Espaço entre os itens */
+}
+
+/* Estilo do rodapé */
+footer {
+  margin-top: auto;
+  /* Empurra o rodapé para o final da página */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 15px 0;
+  /* Espaçamento acima e abaixo */
+  border-top: 1px solid #ccc;
+  /* Linha separando o rodapé do conteúdo */
+  font-size: 0.9rem;
+  /* Fonte menor */
+  color: #555;
+  /* Cor de texto mais suave */
+  background-color: #f9d9ac;
+  /* Cor de fundo clara */
+}
+
+/* Links dentro do rodapé */
+footer a {
+  color: #2980b9;
+  /* Azul chamativo */
+  text-decoration: none;
+  /* Remove sublinhado padrão */
+}
+
+footer a:hover {
+  text-decoration: underline;
+  /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* -------------------- RESPONSIVIDADE -------------------- */
+
+@media (max-width: 767px) {
+  /* Regras aplicadas apenas em telas com largura de até 767px (celulares) */
+
+  header {
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    align-items: center;
+    /* Centraliza os elementos no eixo transversal */
+    text-align: center;
+    /* Alinha texto ao centro */
+  }
+
+  figure {
+    width: 80px;
+    /* Reduz o tamanho da imagem */
+    height: 80px;
+    font-size: 0.8rem;
+    /* Texto menor caso não haja imagem */
+  }
+
+  .profile-info h1 {
+    font-size: 1.4rem;
+    /* Nome menor em telas pequenas */
+  }
+
+  .profile-info p {
+    font-size: 1rem;
+    /* Subtítulo menor */
+  }
+}
