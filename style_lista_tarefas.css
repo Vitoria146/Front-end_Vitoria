@@ -1,0 +1,104 @@
+/* Reset básico para remover margens e paddings padrão do navegador */
+* {
+  margin: 0;
+  /* Remove margem externa padrão */
+  padding: 0;
+  /* Remove preenchimento interno padrão */
+  box-sizing: border-box;
+  /* Inclui padding e border no cálculo do tamanho dos elementos */
+}
+
+/* Estilização global do corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Fonte moderna e de fácil leitura */
+  background-color: #fff3f1;
+  /* Cor de fundo clara e suave */
+  color: #333;
+  /* Cor do texto padrão (cinza escuro) */
+  min-height: 100vh;
+  /* Garante que o body tenha pelo menos a altura total da tela */
+  display: flex;
+  /* Ativa o Flexbox no body */
+  flex-direction: column;
+  /* Organiza os filhos (header, main, footer) em coluna */
+}
+
+/* Estilização do cabeçalho da página */
+header {
+  background-color: #91bbe6;
+  /* Cor de fundo escura (azul petróleo) */
+  color: white;
+  /* Cor do texto no cabeçalho */
+  padding: 20px;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o conteúdo dentro do header */
+}
+
+/* Estilização da área principal da página */
+main {
+  flex: 1;
+  /* Faz o main ocupar o espaço disponível entre header e footer */
+  padding: 20px;
+  /* Espaçamento interno */
+  max-width: 600px;
+  /* Largura máxima do conteúdo principal */
+  margin: 0 auto;
+  /* Centraliza o main horizontalmente */
+}
+
+/* Remove os marcadores padrões da lista */
+.todo-list ul {
+  list-style: none;
+  /* Remove os bullets (bolinhas) padrão da lista */
+}
+
+/* Estilização de cada item da lista de tarefas */
+.todo-list li {
+  background-color: #fff;
+  /* Fundo branco para destaque */
+  padding: 12px 16px;
+  /* Espaçamento interno (vertical e horizontal) */
+  margin-bottom: 10px;
+  /* Espaçamento inferior entre os itens */
+  border-radius: 8px;
+  /* Bordas arredondadas para um visual moderno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra suave para destacar o item */
+  display: flex;
+  /* Alinha os elementos horizontalmente (checkbox e texto) */
+  align-items: center;
+  /* Alinha verticalmente no centro */
+  gap: 10px;
+  /* Espaço entre o checkbox e o texto da tarefa */
+  font-size: 1.1rem;
+  /* Tamanho da fonte levemente maior para melhor leitura */
+}
+
+/* Estilização do rodapé da página */
+footer {
+  text-align: center;
+  /* Centraliza o texto do footer */
+  padding: 15px;
+  /* Espaçamento interno */
+  background-color: #91bbe6;
+  /* Cor de fundo clara e neutra */
+  font-size: 0.9rem;
+  /* Fonte um pouco menor para diferenciar do conteúdo principal */
+  color: #555;
+  /* Cor do texto (cinza suave) */
+}
+
+/* Estilo para telas pequenas (dispositivos móveis) */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+    /* Reduz o padding para economizar espaço em telas menores */
+  }
+
+  .todo-list li {
+    font-size: 1rem;
+    /* Reduz o tamanho da fonte para melhor adaptação ao layout menor */
+  }
+}

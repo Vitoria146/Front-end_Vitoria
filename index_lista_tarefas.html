@@ -1,0 +1,82 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do documento HTML com a linguagem definida como português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+  <!-- Define a codificação de caracteres como UTF-8 (suporte a acentos e caracteres especiais) -->
+  <meta charset="UTF-8" />
+
+  <!-- Configuração de responsividade: largura igual à do dispositivo e zoom inicial em 100% -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da aba no navegador -->
+  <title>Lista de Tarefas</title>
+
+  <!-- Importação do arquivo de estilo externo CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho da página -->
+  <header>
+    <!-- Título principal da página, com um emoji para ilustrar -->
+    <h1>📝 Lista de Tarefas</h1>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <!-- Seção dedicada à lista de tarefas -->
+    <section class="todo-list">
+      <!-- Lista não ordenada de tarefas -->
+      <ul>
+        <!-- Cada item da lista contém um checkbox e uma descrição da tarefa -->
+        <li>
+          <input type="checkbox" id="item1" />
+          <label for="item1">Estudar HTML e CSS</label>
+        </li>
+        <li>
+          <input type="checkbox" id="item2" />
+          <label for="item2">Estudar Python</label>
+        </li>
+        <li>
+          <input type="checkbox" id="item3" />
+          <label for="item3">Ler meu livro</label>
+        </li>
+        <li>
+          <input type="checkbox" id="item4" />
+          <label for="item4">Assistir 1 episódio de série</label>
+        </li>
+        <li>
+          <input type="checkbox" id="item5" />
+          <label for="item5">Estudar Italiano</label>
+        </li>
+        <li>
+          <input type="checkbox" id="item5" />
+          <label for="item5">Dar remédio do Theo!</label>
+        </li>
+        <li>
+          <input type="checkbox" id="item5" />
+          <label for="item5">Ligar pro Luan antes de dormir</label>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <!-- Informações de autoria e link para o GitHub -->
+    <p>
+      Exercício 2 - Lista de Tarefas |
+      Desenvolvido por
+      <a href="https://github.com/vitoria146" target="_blank">Vitória Rodrigues</a>
+      © 2025
+    </p>
+  </footer>
+
+</body>
+
+</html>
