@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+
+
+body{
+    background-color: #FFF8DC;
+}
+
+.titulo{
+    font-size: 36px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.nome__rm{
+    height: 130px;
+    width: 130px;
+    background-color: #FFB6C1;
+    color: #363636;
+    font-size: 18px;
+    font-family:"Montserrat", sans-serif;
+    text-align:center;
+    border-radius: 16px;
+    margin: 15px;
+    align-content: center;
+
+}
+
+.q1 {
+    position: relative;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 400px;
+}
+
+.q2 {
+    position: relative;
+    margin-top: -400px;
+}
+
+.verde{
+    display: flex;
+    gap: 50px;
+}
+
+.qa2{
+    position: relative;
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+}
+
+.espaco{
+    margin-left: 50px;
+}
+
+.piece{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    display: flex;
+}
+
+.blank {
+    width: 400px;
+    height: 200px;
+}
+
+.black {
+    color: lightseagreen;
+}
+.white {
+    color: lightpink;
+}
+
+.tabuleiro {
+    width: 400px;
+    border: 3px solid #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
