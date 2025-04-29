@@ -1,0 +1,155 @@
+/* Reset geral para remover margens e paddings padrão */
+* {
+  margin: 0;
+  /* Remove margens externas */
+  padding: 0;
+  /* Remove preenchimentos internos */
+  box-sizing: border-box;
+  /* Inclui borda e padding no cálculo do tamanho dos elementos */
+}
+
+/* Estilo global do body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Fonte moderna e legível */
+  background-color: #fff8f0;
+  /* Cor de fundo suave */
+  color: #333;
+  /* Cor de texto escura */
+  min-height: 100vh;
+  /* Altura mínima da tela */
+  display: flex;
+  /* Ativa o Flexbox */
+  flex-direction: column;
+  /* Organiza os filhos verticalmente */
+}
+
+/* Cabeçalho da página */
+header {
+  background-color: #956ece;
+  /* Roxo vibrante */
+  color: white;
+  /* Texto branco */
+  padding: 20px;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o conteúdo */
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  /* Ocupa o espaço restante da tela */
+  max-width: 800px;
+  /* Largura máxima do conteúdo */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  padding: 20px;
+  /* Espaçamento interno */
+}
+
+/* Imagem ilustrativa */
+figure {
+  text-align: center;
+  /* Centraliza a imagem */
+  margin-bottom: 30px;
+  /* Espaço abaixo da imagem */
+}
+
+figure img {
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse o container */
+  border-radius: 10px;
+  /* Arredonda os cantos da imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adiciona uma sombra suave */
+}
+
+figcaption {
+  margin-top: 8px;
+  /* Espaçamento acima da legenda */
+  font-size: 0.9rem;
+  /* Tamanho menor para legenda */
+  color: #666;
+  /* Cor mais clara */
+}
+
+/* Títulos das seções */
+h2 {
+  color: #8e44ad;
+  /* Mantém a identidade visual roxa */
+  margin-bottom: 10px;
+  /* Espaço abaixo do título */
+}
+
+/* Lista de ingredientes */
+.ingredientes ul {
+  list-style: disc inside;
+  /* Bolinhas dentro da lista */
+  margin-bottom: 30px;
+  /* Espaçamento após a lista */
+  padding-left: 10px;
+  /* Espaço à esquerda */
+}
+
+.ingredientes li {
+  margin-bottom: 6px;
+  /* Espaço entre os itens */
+}
+
+/* Lista de preparo (ordenada) */
+.preparo ol {
+  list-style: decimal inside;
+  /* Números dentro da lista */
+  padding-left: 10px;
+  /* Espaço à esquerda */
+}
+
+.preparo li {
+  margin-bottom: 10px;
+  /* Espaço entre os passos */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 15px;
+  /* Espaçamento interno */
+  background-color: #f3e9ff;
+  /* Fundo claro com tom roxo claro */
+  font-size: 0.9rem;
+  /* Tamanho menor */
+  color: #555;
+  /* Cor suave */
+}
+
+footer a {
+  color: #8e44ad;
+  /* Cor roxa para o link */
+  text-decoration: none;
+  /* Remove o sublinhado */
+}
+
+footer a:hover {
+  text-decoration: underline;
+  /* Sublinha o link ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+    /* Reduz o padding em dispositivos pequenos */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    /* Diminui o título principal */
+  }
+
+  figure img {
+    border-radius: 6px;
+    /* Bordas menos arredondadas para telas menores */
+  }
+}
