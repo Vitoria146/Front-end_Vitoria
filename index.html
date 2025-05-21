@@ -1,83 +1,41 @@
 <!DOCTYPE html>
-<!-- Declaração do tipo de documento HTML5 -->
-
 <html lang="pt-br">
-<!-- Define o idioma principal da página como inglês (poderia ser "pt-br") -->
 
 <head>
-  <meta charset="UTF-8">
-  <!-- Define a codificação de caracteres para UTF-8, suportando acentos e símbolos -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Garante que o layout seja responsivo em dispositivos móveis -->
-
-  <title>Meu Perfil</title>
-  <!-- Título da aba do navegador -->
-
-  <link rel="stylesheet" href="./styles/style.css">
-  <!-- Link para o arquivo CSS externo onde está a estilização da página -->
-
-  <link rel="icon" href="./me.jpg" type="image/png">
-  <!-- Ícone da aba do navegador (favicon) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
 </head>
 
 <body>
-  <header>
-    <!-- Cabeçalho da página, geralmente com informações de destaque -->
-    <div class="header-content">
-      <!-- Container para alinhar a foto e as infos lado a lado -->
 
-      <figure class="photo-placeholder">
-        <!-- Tag semântica para imagens com legenda (embora aqui só use como container da foto) -->
-        <img src="./me.jpg" alt="Vitória Rodrigues" class="profile-photo">
-        <!-- Imagem do perfil com alt (texto alternativo para acessibilidade) -->
-      </figure>
-
-      <div class="profile-info">
-        <!-- Informações de perfil (nome e profissão) -->
-        <h1>Vitória Rodrigues Martins</h1>
-        <!-- Nome principal do perfil -->
-        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-        <!-- Pequena descrição/título abaixo do nome -->
-      </div>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__paragrafo"></p>
+                </div>
+                <input type="number" min="1" max="10" class="container__input">
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" class="container__botao">Chutar</button>
+                    <button onclick="" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
+        </div>
     </div>
-  </header>
 
-  <main>
-    <!-- Parte principal do conteúdo da página -->
-    <section class="about">
-      <!-- Sessão "Sobre mim" -->
-      <h2>Sobre mim</h2>
-      <p>Tenho 23 anos, sou nutricionista, amo animais, me formei em Nutrição e amo ler.</p>
-    </section>
 
-    <section class="hobbies">
-      <!-- Sessão de hobbies/interesses -->
-      <h2>Interesses</h2>
-      <ul>
-        <!-- Lista sem ordenação -->
-        <li>📖​ Ler</li>
-        <li>🐶​ Animais</li>
-        <li>🍎​Nutrição</li>
-      </ul>
-    </section>
 
-    <section class="contact">
-      <!-- Sessão de contato -->
-      <h2> Contato: </h2>
-      <a class="links_redes" href="mailto:vitoria.martinsro.146@gmail.com">Email</a>
-      <!-- Link clicável que abre o email -->
-      <a class="links_redes" href="https://www.instagram.com/viirmartins.nutri">Instagram</a>
-      <!-- Link clicável para discar no celular -->
-    </section>
-  </main>
 
-  <footer>
-    <!-- Rodapé da página -->
-    <p>Exercicio 1 - Pagina de perfil | Desenvolvido por <a href="https://github.com/Vitoria146"
-        target="_blank">vitoria146 </a> © 2025</p>
-    <!-- Crédito com link para o GitHub abrindo em nova aba -->
-  </footer>
+    <script src="app.js" defer></script>
 </body>
 
 </html>
