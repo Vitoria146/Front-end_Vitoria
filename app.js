@@ -1,58 +1,43 @@
-let listaDeNumerosSorteados = [];
-let numeroSecreto = gerarNumeroAleatorio();
-let tentativas = 1;
-let numeroLimite = 10;
+// Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.
+/* let counter = 1;
 
-function exibirTextoNaTela (tag, texto){
-	let campo = document.querySelector(tag);
-	campo.innerHTML = texto;
-	responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate:1.2});
+while (counter < 10){
+    console.log(counter);
+    counter ++;
+    alert(`${counter}`);
+} */
+
+// Crie um contador que comece em 10 e vá até 0 usando um loop while. Mostre cada número.
+
+/* let counter = 10;
+
+while (counter > 0){
+    console.log(counter);
+    counter --;
+    alert(`${counter}`);
 }
+*/
 
-function exibirMensagemInicial(){
-exibirTextoNaTela("h1", "Jogo do número secreto");
-exibirTextoNaTela("p", "Escolha um número entre 1 e 10");
-}
-exibirMensagemInicial();
+//Crie um programa de contagem regressiva. Peça um número ao usuario e conte deste número até 0, usando um loop while no console do navegador.
+/* let number;
 
 
-function verificarChute(){
-	let chute = document.querySelector("input").value;
-	
-	if (chute == numeroSecreto){
-		exibirTextoNaTela("h1", "Acertou!");
-			let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
-			let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
-		exibirTextoNaTela("p", mensagemTentativas);
-		document.getElementById("reiniciar").removeAttribute("disable");
-	} else {
-			if(chute > numeroSecreto){
-				exibirTextoNaTela("p", "O número secreto é menor!");
-			} else {
-				exibirTextoNaTela("p", "O número secreto é maior!");
-			}
-			tentativas ++;
-	}
-}
+number = prompt("Escolha um número para que seja apresentada sua contagem regressiva!");
 
-    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
-    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
-    if (quantidadeDeElementosNaLista == 3) {
+while (number >= 0){
+    console.log(numeroMaximo);
+    alert(`Contagem regressiva ${number}`);  
+    number --;
+} */
 
-    listaDeNumerosSorteados = [];
-}
+//Crie um programa de contagem progressiva. Peça um número ao usuario e conte de 0 até esté número, usando um loop while no console do navegador.
 
-function limparCampo (){
-chute = documento.querySelector("input");
-chute.value = "";
+let number
+ number = prompt("Escolha um número para que seja apresentada sua contagem  progressiva!");
+let counter = 0;
 
-}
-
-function reiniciarJogo(){
-numeroSecreto = gerarNumeroAleatorio();
-limparCampo();
-tentativas = 1;
-exibirMensagemInicial();
-document.getElementById("reiniciar").setAttribute("disabled", true)
-}
-
+while (counter <= number){
+    console.log(counter);
+    alert(`Contagem progressiva ${counter}`);  
+    counter ++;
+} 
